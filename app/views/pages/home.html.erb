@@ -1,0 +1,44 @@
+<div class="container-fluid jumbo-div">
+	<div class="head-div">
+			<%= link_to image_tag("githublogowhite.png", class: "githublogo"), "https://github.com/GitNikko", class: "githublogo" %>
+	</div>
+	<div class="main-content">
+	  <h1 class="jumbo-header">My Pathway Into <span id="webdev">Web Development</span>.</h1>
+		<p class="author">by Nicholas Hunt</p>
+	</div>
+</div>
+<div class="thumbnail-div">
+	<p class="recent-articles">Recent articles</p>
+	<hr>
+	<div class="container card-container">
+		<div class="card-deck">
+		  <div class="card">
+				<%= link_to (image_tag "socialmedia.png", class: "card-img-top"), omniauth_path %>
+		    <div class="card-body">
+		      <p class="card-title"><%= link_to "Integrating OmniAuth", omniauth_path, class: "text-muted" %> </p>
+		      <p class="card-text">Handling social media logins</p>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <%= image_tag "pizzame.jpg", class: "card-img-top" %>
+		    <div class="card-body">
+		      <p class="card-title text-muted">PizzaMe</p>
+		      <p class="card-text">PizzaMe portfolio page</p>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <%= image_tag "yelpfusion.jpg", class: "card-img-top" %>
+		    <div class="card-body">
+		      <p class="card-title text-muted">Yelp Fusion</p>
+		      <p class="card-text">Using the latest Yelp API</p>
+		    </div>
+		  </div>
+		</div>
+	</div>
+</div>
+<footer class="container-fluid footer">
+	<ul class="footer-list">
+		<li>About</li>
+		<li>Contact</li>
+	</ul>
+</footer>
