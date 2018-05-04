@@ -13,32 +13,30 @@
 	<div class="container card-container">
 		<div class="card-deck">
 		  <div class="card">
-				<%= link_to (image_tag "socialmedia.png", class: "card-img-top"), omniauth_path %>
+				<%= link_to (image_tag "socialmedia.png", class: "card-img-top"), blog_path(:id => "omniauth") %>
 		    <div class="card-body">
-		      <p class="card-title"><%= link_to "Integrating OmniAuth", omniauth_path, class: "text-muted" %> </p>
+		      <p class="card-title">
+						<%= link_to "Integrating OmniAuth", blog_path(:id => "omniauth"), class: "text-muted" %>
+					</p>
 		      <p class="card-text">Handling social media logins</p>
 		    </div>
 		  </div>
 		  <div class="card">
-		    <%= image_tag "pizzame.jpg", class: "card-img-top" %>
+		    <%= link_to (image_tag "pizzame.jpg", class: "card-img-top"), "https://pizza-me-now.herokuapp.com" %>
 		    <div class="card-body">
-		      <p class="card-title text-muted">PizzaMe</p>
+		      <p class="card-title"><%= link_to "PizzaMe", "https://pizza-me-now.herokuapp.com", class: "text-muted" %></p>
 		      <p class="card-text">PizzaMe portfolio page</p>
 		    </div>
 		  </div>
 		  <div class="card">
-		    <%= image_tag "yelpfusion.jpg", class: "card-img-top" %>
+		    <%= link_to (image_tag "yelpfusion.jpg", class: "card-img-top"), blog_path(:id => "yelpfusion") %>
 		    <div class="card-body">
-		      <p class="card-title text-muted">Yelp Fusion</p>
+		      <p class="card-title">
+						<%= link_to "Yelp Fusion", blog_path(:id => "yelpfusion"), class: "text-muted" %>
+					</p>
 		      <p class="card-text">Using the latest Yelp API</p>
 		    </div>
 		  </div>
 		</div>
 	</div>
 </div>
-<footer class="container-fluid footer">
-	<ul class="footer-list">
-		<li>About</li>
-		<li>Contact</li>
-	</ul>
-</footer>

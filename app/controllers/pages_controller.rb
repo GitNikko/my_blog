@@ -3,9 +3,7 @@ class PagesController < ApplicationController
   end
 
   def blog
+    @blog = params[:id]
   end
 
-  def omniauth
-  end
-  
 end
